@@ -14,53 +14,51 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon/motorico.png">
     <link rel="stylesheet" href="../css/index.css">
 </head>
-
-<body>
-    <header>
-        <div class="contenedor3">
-            <div class="logos">
-                <img src="../img/logo/facebook.png" alt="facebook" class="logo">
-                <img src="../img/logo/instagram.png" alt="instagram" class="logo">
-                <img src="../img/logo/whatsapp.png" alt="whatsapp" class="logo">
-                <img src="../img/logo/youtube.png" alt="youtube" class="logo">
-            </div>
-            <div class="titulo">
-                <h1>Taller Mecánico</h1>
-            </div>
+<div class="container>" <header>
+    <div class="contenedor3">
+        <div class="logos">
+            <img src="../img/logo/facebook.png" alt="facebook" class="logo">
+            <img src="../img/logo/instagram.png" alt="instagram" class="logo">
+            <img src="../img/logo/whatsapp.png" alt="whatsapp" class="logo">
+            <img src="../img/logo/youtube.png" alt="youtube" class="logo">
         </div>
+        <div class="titulo">
+            <h1>Taller Mecánico</h1>
+        </div>
+    </div>
 
 
 
 
 
-        <div class="col-12 col-md-12">
-            <nav class="nav">
-                <div class="nav__container">
+    <div class="col-12 col-md-12">
+        <nav class="nav">
+            <div class="nav__container">
 
-                    <h1 class="nav__logo"></h1>
-                    <div>
-                        <label for="buscar">Buscar</label>
-                        <input type="text" id="buscar">
-                        <input type="submit" value="buscar">
-                    </div>
-
-                    <label for="menu" class="nav__label">
-                        <img src="../assets/menu.svg" alt="" class="nav__ing">
-                    </label>
-                    <input type="checkbox" id="menu" class="nav__input">
-
-                    <div class="nav__menu">
-
-                        <a href="../index.html" class="nav__item">El Taller</a>
-                        <a href="galeria.html" class="nav__item">Galeria</a>
-                        <a href="unetealclub.html" class="nav__item">Unete al club</a>
-                        <a href="comollegar.html" class="nav__item">Como llegar?</a>
-                    </div>
-
+                <h1 class="nav__logo"></h1>
+                <div>
+                    <label for="buscar">Buscar</label>
+                    <input type="text" id="buscar">
+                    <input type="submit" value="buscar">
                 </div>
 
-            </nav>
-        </div>
+                <label for="menu" class="nav__label">
+                    <img src="../assets/menu.svg" alt="" class="nav__ing">
+                </label>
+                <input type="checkbox" id="menu" class="nav__input">
+
+                <div class="nav__menu">
+
+                    <a href="../index.html" class="nav__item">El Taller</a>
+                    <a href="galeria.html" class="nav__item">Galeria</a>
+                    <a href="unetealclub.html" class="nav__item">Unete al club</a>
+                    <a href="comollegar.html" class="nav__item">Como llegar?</a>
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
     </header>
     <hr>
 
@@ -69,63 +67,81 @@
         <main>
             <article class="cuerpo">
 
-                <section class="fotos">
-                    <h4>Fotos</h4>
-                    <img src="../img/ref/frenos.jpg" alt="frenos" class="referencia">
-                    <img src="../img/ref/motor.jpg" alt="motor" class="referencia">
-                    <img src="../img/ref/medir aceite.jpg" alt="aceite" class="referencia">
-                    <img src="../img/ref/perdida.jpg" alt="perdida" class="referencia">
-                    <h4>Videos</h4>
-                </section>
-
-                <aside class="publicidad">
-                    <h4 class="publicidad__titulo">Publicidad</h4>
-                    <p class="publicidad__contenido">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-                        rem pariatur non qui molestias
-                        consequuntur
-                        id asperiores a! Tempore similique ea ipsum! Corrupti suscipit eius cumque porro laboriosam
-                        facere
-                        ipsam.
-                    </p>
-                </aside>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-8">
+                        <section class="fotos">
+                            <h4>Fotos</h4>
+                            <img src="../img/ref/frenos.jpg" alt="frenos" class="referencia">
+                            <img src="../img/ref/motor.jpg" alt="motor" class="referencia">
+                            <img src="../img/ref/mediraceite.jpg" alt="aceite" class="referencia">
+                            <img src="../img/ref/perdida.jpg" alt="perdida" class="referencia">
+                            <h4>Videos</h4>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OHyJE579Wkk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </section>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="row bg-dark text-white banner">
+                            <h3>Capacitaciones</h3>
+                            <p>Si tenes problemas con tu auto, si es tu primer auto y no tenes idea de que hacer antes
+                                de
+                                arrancarlo
+                                o como cambiar la rueda si pinchastes, este curso prático es para vos, en nuestro curso
+                                vasa
+                                poder
+                                saber que hacer cuando lo necesites, para mas informacion hace click aca!</p>
+                        </div>
+                    </div>
+                </div>
             </article>
         </main>
     </body>
 
 
-    <footer class="info">
-        <div class="instrucciones">
+    <footer class="row">
 
-            <div class="cole">
-                <img src="../img/logo/colectivo.png" alt="colectivo" class="pub">
+        <div class="col-sm-12 col-lg-4">
+            <div class="instrucciones">
+                <div class="cole">
+                    <img src="../img/logo/colectivo.png" alt="colectivo" class="pub">
+                    <ul>lineas</ul>
+                    <li>Línea A</li>
+                    <li>Línea B</li>
+                    <li>Línea C</li>
+                </div>
+                <div class="subt ">
+                    <img src="../img/logo/subte.png" alt="subte" class="pub">
+                    <ul>subte</ul>
+                    <li>Subte 1</li>
+                    <li>Subte 2</li>
+                </div>
+            </div>
 
-                <ul>lineas</ul>
-                <li>Línea A</li>
-                <li>Línea B</li>
-                <li>Línea C</li>
-            </div>
-            <div class="subt">
-                <img src="../img/logo/subte.png" alt="subte" class="pub">
-                <ul>subte</ul>
-                <li>Subte 1</li>
-                <li>Subte 2</li>
-            </div>
 
         </div>
-        <div class="mapa">
+        <div class="col-sm-12 col-lg-4">
 
-            <h3 class="titulomapa">maps</h3>
-            <img src="../img/ref/CABA.png" alt="mapa" class="map">
+            <div class="mapa">
+                <h3 class="titulomapa">maps</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d580.3452510408731!2d-58.42037497298116!3d-34.631247116137224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26921167e393276f!2sKyJ%20Racing!5e0!3m2!1ses-419!2sar!4v1664325976251!5m2!1ses-419!2sar"
+                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
-        <div class="marca">.
-            <img src="../img/logo/chevrolet.png" alt="chevrolet" class="chivo pub">
-            <img src="../img/logo/fiat.png" alt="fiat" class="fiat pub">
-            <img src="../img/logo/Puegeot.png" alt="peugeot" class="peu pub">
-            <img src="../img/logo/Citrouen.png" alt="citroen" class="citro pub">
-            <img src="../img/logo/vw.png" alt="volkswagen" class="volk pub">
+        <div class="col-sm-12 col-lg-4">.
+            <div class="marca">
+                <img src="../img/logo/chevrolet.png" alt="chevrolet" class="chivo pub">
+                <img src="../img/logo/fiat.png" alt="fiat" class="fiat pub">
+                <img src="../img/logo/Puegeot.png" alt="peugeot" class="peu pub">
+                <img src="../img/logo/Citrouen.png" alt="citroen" class="citro pub">
+                <img src="../img/logo/vw.png" alt="volkswagen" class="volk pub">
+            </div>
         </div>
     </footer>
-</body>
+</div>
 
 </html>
