@@ -33,19 +33,21 @@ body {
     font-size: 1.5em;
     font-weight: 900;
 }
-.nav__menu{
+
+.nav__menu {
     display: grid;
     grid-auto-flow: column;
     gap: 3em;
 }
-.nav__item{
+
+.nav__item {
     color: #fff;
     text-decoration: none;
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-    
+
 }
 
-.nav__item::after{
+.nav__item::after {
     content: "";
     display: block;
     background: #fff;
@@ -55,28 +57,31 @@ body {
     clip-path: var(--clippy);
     transition: clip-path .5s;
 }
-.nav__item:hover{
+
+.nav__item:hover {
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    
+
 
 }
 
-.nav__input:checked +.nav__menu {
+.nav__input:checked+.nav__menu {
     background: rgb(169, 255, 71);
 
 }
 
-.nav__label, .nav__input{
+.nav__label,
+.nav__input {
     display: none;
 
 }
 
-@media (max-width: 700px){
-.nav__label{
-    display: block;
-    cursor:pointer ;
-}
-    .nav__menu{
+@media (max-width: 700px) {
+    .nav__label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__menu {
         position: fixed;
         top: 80px;
         bottom: 0;
@@ -91,40 +96,30 @@ body {
         transition: clip-path 1s ease-in-out;
     }
 
-    .nav__input:checked + .nav__menu{
+    .nav__input:checked+.nav__menu {
         clip-path: circle(100% at center);
 
     }
 }
 
-header{
+header {
     background-image: url();
     background-size: cover;
     background-repeat: no-repeat;
-    border: 0px solid rgb(0, 0, 0);
-    border-radius: 25px;
-    
+    border: 3px solid rgb(0, 0, 0);
+
+
+}
+
+.marca {
+
+    height: max-content;
+    height: 10 0%;
 }
 
 .contenedor3 {
-   
-    
+
     height: 20vh;
-   /* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;*/
-
-    background-image: url(../img/logo/linea\ auto.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 25px;
-    padding: 5px;
-
 }
 
 .logo {
@@ -132,152 +127,109 @@ header{
 }
 
 @media (min-width: 900px) {
-    
- 
+
+
     .titulo {
         background-image: url(../img/banderas/banda.png);
         background-size: 100px 110px;
         background-repeat: no-repeat;
         background-position: center;
-    
-    
-    
+
+
+
+    }
+
+    .contenedor3 {
+        background-image: url(../img/logo/lineaauto.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
     }
 }
 
 
-.contenedor1 {
-    background-color: rgba(25, 0, 255, 0.425);
-    /*display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    justify-content: space-between;*/
-    
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 25px;
-    padding: 5px;
-    margin: 2px 0px 2px 0px;
-}
-
-.caja1:hover{
-    color: rgb(60, 255, 0);
-
-}
-.caja1:visited{
-    color: blueviolet;
-}
-.contenedor2 {
-    
-    background-color: rgba(255, 255, 255, 0.568);
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 25px;
-    padding: 5px;
-    margin: 2px 0px 2px 0px;
-
-    /*flex-wrap: wrap;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    align-items: flex-start;*/
-    
-    /*width: 75vw;
-    position: sticky;
-    top: 20px;*/
-}
-.caja2:hover{
-    color: rgb(60, 255, 0);
-
-}
-.caja2:visited{
-    color: blueviolet;
-}
-a{
+a {
     text-decoration: none;
-    
+
 }
 
 
-.caja2:hover{
-    color: rgb(94, 255, 0);
-}
 
 
-body{
+.cuerpo {
+
     background-image: url(../img/logo/fondodetarjeta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: fit-content;
+
+
+}
+
+.parrafo {
+    background-color: rgba(240, 248, 255, 0.644);
+}
+
+.lineas {
+    background-color: rgba(240, 248, 255, 0.644);
 }
 
 @media (min-width: 900px) {
-   
-    .presentación{
+
+    .presentación {
+
         background-image: url(../img/fondo/Formulauno.png);
+        height: max-content;
+
+        background-repeat: no-repeat;
         background-size: cover;
+
     }
-  
 }
 
-.cuerpo {
-    height: max-content;
-    background-color: rgba(240, 248, 255, 0.719);
-    background-repeat: no-repeat;
-    background-size: 100%;
-  
-}
+
 .promo {
-    background-color: rgba(250, 235, 215, 0.616);
+    background-color: rgba(255, 255, 255, 0.699);
 }
 
 .principal {
-    background-color: rgba(255, 255, 255, 0.726);
+
     border: 0px solid rgb(0, 0, 0);
     border-radius: 25px;
     width: auto;
     height: max-content;
-    
+
     text-align: center;
 
 }
 
-.tecnicos{
-    height: auto;
-    /*display: flex;
-    */
-}
+.tecnicos {
 
+    height: auto;
+}
 
 .operiario {
+
     height: 100px;
-    display: flex;
-    padding-left: 25%;
-    
 }
-.foto{
+
+.foto {
+
     height: 100px;
 }
 
 
 .referencia {
+
     height: 100px;
     width: 100px;
-
-
 }
 
 .publicidad {
 
-    padding: 1%;
-    border: 0px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.726);
-    border-radius: 25px;
-    /*width: 25%;
-    text-align: center;
-    margin-left: auto;
-    align-items: stretch;
-    height: auto;*/
-
-
-
 }
 
 .publicidad__contenido {
@@ -285,48 +237,19 @@ body{
 
 }
 
+
 footer {
-    background-image: url(../img/fondo/red-gradient.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    border: 3px solid rgb(0, 0, 0);
     position: absolute;
     bottom: 1;
     width: 100%;
-
-    border: 3px solid rgb(0, 0, 0);
-    
-    
-    /*display: flex;
-     align-items: stretch;*/
-    
-   /*padding: 5px 5% 5px 5% */;
-   
 }
 
-.instrucciones {
-    width: max-content;
-    /*margin: 0% 1% 0% 1%;*/
-    /*border: 2px solid rgb(0, 0, 0);
-    border-radius: 25px;*/
-    align-items: center;
-    justify-content: space-evenly;
-    display: flex;
 
-}
 
-.marca {
-    height: max-content;
-    height: 10 0%;
-    margin: 0% 1% 0% 1%;
-    /*border: 2px solid rgba(0, 0, 0, 0.603);
-    border-radius: 25px;*/
-display: flex;
-    justify-content: space-between;
-}
+
 
 .pub {
-    width: 70px;
+    width: 40px;
 }
-
-
-
