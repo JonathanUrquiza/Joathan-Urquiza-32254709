@@ -7,11 +7,9 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-}
-
-body {
     font-family: 'Roboto', sans-serif;
 }
+
 
 .nav {
     background: #293241;
@@ -103,7 +101,7 @@ body {
 }
 
 header {
-    background-image: url();
+    
     background-size: cover;
     background-repeat: no-repeat;
     border: 3px solid rgb(0, 0, 0);
@@ -235,6 +233,9 @@ a {
 .publicidad__contenido {
     padding: 1%;
 
+}
+form {
+    background-color: rgba(240, 255, 255, 0.637);
 }
 
 
