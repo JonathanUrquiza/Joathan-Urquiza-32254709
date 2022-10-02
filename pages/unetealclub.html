@@ -73,15 +73,25 @@
             <article class="cuerpo row">
                 <section class="presentación col-sm-12 col-lg-8 text-center">
                     <h1>Contatese con nosotros</h1>
-                    <form action="" class="mensaje">
+                    <form action="" class="mensaje" id="elform">
                         <div>
-                            <label for="nombreyapellido">Nombre y Apellido</label>
-                            <input type="text" id="nombreyapellido">
+                            <label for="nombreyapellido" class=".text-center">Nombre</label>
+                            <input type="text" id="inputNombre">
                         </div>
                         <h1></h1>
                         <div>
-                            <label for="email">Ingrese su mail</label>
-                            <input type="email" id="email">
+                            <label for="nombreyapellido" class=".text-center">Apellido</label>
+                            <input type="text" id="apellido">
+                        </div>
+                        <h1></h1>
+                        <div>
+                            <label for="fechaNac">Fecha de nacimiento</label>
+                            <input type="date" id="inputfechaNac"></input>
+                        </div>
+                        <h1></h1>
+                        <div>
+                            <label for="email" class="text-center">Ingrese su mail</label>
+                            <input type="email" id="inputemail" class="text-center">
                         </div>
                         <h1></h1>
                         <div>
@@ -120,17 +130,17 @@
 
 
                 <div class="col-sm-12 col-lg-4">
-                <div class="row bg-dark text-white banner">
-                    <h3>Capacitaciones</h3>
-                    <p>Si tenes problemas con tu auto, si es tu primer auto y no tenes idea de que hacer antes
-                        de
-                        arrancarlo
-                        o como cambiar la rueda si pinchastes, este curso prático es para vos, en nuestro curso
-                        vasa
-                        poder
-                        saber que hacer cuando lo necesites, para mas informacion hace click aca!</p>
+                    <div class="row bg-dark text-white banner">
+                        <h3>Capacitaciones</h3>
+                        <p>Si tenes problemas con tu auto, si es tu primer auto y no tenes idea de que hacer antes
+                            de
+                            arrancarlo
+                            o como cambiar la rueda si pinchastes, este curso prático es para vos, en nuestro curso
+                            vasa
+                            poder
+                            saber que hacer cuando lo necesites, para mas informacion hace click aca!</p>
+                    </div>
                 </div>
-            </div>
             </article>
         </main>
     </body>
@@ -165,7 +175,7 @@
                     <li></li>
                 </ul>
             </div>
-            <div class="col-12 col-lg-4 p-5 text-center">
+            <div class="col-12 col-lg-4 p-5 .mx-auto .d-block .text-center">
                 <form action="">
                     <div>
                         <label for="news">Suscribite a nuestro newletter</label>
@@ -176,6 +186,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/01-intro.js"></script>
 </body>
 
 </html>
