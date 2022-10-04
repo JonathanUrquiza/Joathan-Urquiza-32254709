@@ -58,7 +58,7 @@
 
 .nav__item:hover {
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-
+transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
 
@@ -99,7 +99,7 @@
 
     }
 }
-
+/*fin del navbar*/
 header {
     
     background-size: cover;
