@@ -100,19 +100,14 @@ transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 }
 /*fin del navbar*/
-header {
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 3px solid rgb(0, 0, 0);
-
-
-}
 
 .marca {
 
     height: max-content;
     height: 10 0%;
+}
+.marca__pub {
+    width: 40px;
 }
 
 .contenedor3 {
@@ -123,6 +118,7 @@ header {
 .logo {
     height: 20px;
 }
+
 
 @media (min-width: 900px) {
 
@@ -251,6 +247,3 @@ footer {
 
 
 
-.pub {
-    width: 40px;
-}
