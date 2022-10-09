@@ -17,16 +17,16 @@
 
 <body class="container-fluid">
     <header>
-        <div class="contenedor3 row">
-            <div class="marca">
-                <img src="../img/logo/chevrolet.png" alt="chevrolet" class="chivo pub">
-                <img src="../img/logo/fiat.png" alt="fiat" class="fiat pub">
-                <img src="../img/logo/Puegeot.png" alt="peugeot" class="peu pub">
-                <img src="../img/logo/Citrouen.png" alt="citroen" class="citro pub">
-                <img src="../img/logo/vw.png" alt="volkswagen" class="volk pub">
+        <div class="row contenedor1">
+            <div class="contenedor1__marca">
+                <img src="../img/logo/chevrolet.png" alt="chevrolet" class="contenedor1__pub">
+                <img src="../img/logo/fiat.png" alt="fiat" class="contenedor1__pub">
+                <img src="../img/logo/Puegeot.png" alt="peugeot" class="contenedor1__pub">
+                <img src="../img/logo/Citrouen.png" alt="citroen" class="contenedor1__pub">
+                <img src="../img/logo/vw.png" alt="volkswagen" class="contenedor1__pub">
             </div>
             <div class="titulo row col-lg-6">
-                <h1  class="col-sm-12">Taller Mecánico</h1>
+                <h1 class="col-sm-12">Taller Mecánico</h1>
             </div>
         </div>
 
@@ -47,7 +47,7 @@
                     </div>
 
                     <label for="menu" class="nav__label">
-                        <img src="../assets/menu.svg" alt="" class="nav__ing">
+                        <img src="../assets/menu.svg" alt="" class="nav__img">
                     </label>
                     <input type="checkbox" id="menu" class="nav__input">
 
@@ -66,75 +66,77 @@
     </header>
 
 
-    <main>
+    <main class="row galeria">
 
-        <div class= "row">
-            <section class="fotos col-sm-12 col-lg-8"">
-                <h4>Fotos</h4>
-                <img src="../img/ref/frenos.jpg" alt="frenos" class="referencia">
-                <img src="../img/ref/motor.jpg" alt="motor" class="referencia">
-                <img src="../img/ref/mediraceite.jpg" alt="aceite" class="referencia">
-                <img src="../img/ref/perdida.jpg" alt="perdida" class="referencia">
-                <h4>Videos</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OHyJE579Wkk"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </section>
-        </div>
-        <div class="col-sm-12 col-lg-4">
-            <div class="row bg-dark text-white banner">
+
+        <section class="galeria__fotos col-sm-12 col-lg-8">
+            <h4>Fotos</h4>
+            <img src=" ../img/ref/frenos.jpg" alt="frenos" class="referencia">
+            <img src="../img/ref/motor.jpg" alt="motor" class="referencia">
+            <img src="../img/ref/mediraceite.jpg" alt="aceite" class="referencia">
+            <img src="../img/ref/perdida.jpg" alt="perdida" class="referencia">
+
+        </section>
+
+        <section class="galeria__video col-sm-12 col-lg-8">
+            <h4>Videos</h4>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/OHyJE579Wkk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+
+        <div class="col-sm-12 ">
+
+            <div class="row text-white bg-dark cuerpo__banner">
                 <h3>Capacitaciones</h3>
-                <p>Si tenes problemas con tu auto, si es tu primer auto y no tenes idea de que hacer antes
-                    de
+                <p>Si tenes problemas con tu auto, si es tu primer auto y no tenes idea de que hacer antes de
                     arrancarlo
-                    o como cambiar la rueda si pinchastes, este curso prático es para vos, en nuestro curso
-                    vasa
+                    o como cambiar la rueda si pinchastes, este curso prático es para vos, en nuestro curso vasa
                     poder
                     saber que hacer cuando lo necesites, para mas informacion hace click aca!</p>
             </div>
         </div>
 
+
     </main>
 </body>
 
 
-<footer>
+<footer class="row">
 
 
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 text-center">
-            <h4>links</h4>
-            <ul class="list-unstyled">
-                <li>Nosotros</li>
-                <li>Ubicación</li>
-                <li>Galería</li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 pt-2 text-center">
-            <h4>Redes</h4>
-            <ul class="list-unstyled">
 
-                <li>youtube</li>
-                <li>tiktok</li>
-                <li>instagram</li>
-                <li>facebook</li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="col-12 col-lg-4 p-5 text-center">
-            <form action="">
-                <div>
-                    <label for="news">Suscribite a nuestro newletter</label>
-                    <input type="text" name="news" id="news">
-                </div>
-                <input type="submit" value="suscribir">
-            </form>
-        </div>
+    <div class="col-12 col-md-6 col-lg-4 text-center">
+        <h4>links</h4>
+        <ul class="list-unstyled">
+            <li>Nosotros</li>
+            <li>Ubicación</li>
+            <li>Galería</li>
+        </ul>
     </div>
+    <div class="col-12 col-md-6 col-lg-4 pt-2 text-center">
+        <h4>Redes</h4>
+        <ul class="list-unstyled">
+
+            <li>youtube</li>
+            <li>tiktok</li>
+            <li>instagram</li>
+            <li>facebook</li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="col-12 col-lg-4 p-5 text-center">
+        <form action="">
+            <div>
+                <label for="news">Suscribite a nuestro newletter</label>
+                <input type="text" name="news" id="news">
+            </div>
+            <input type="submit" value="suscribir">
+        </form>
+    </div>
+
 </footer>
 </div>
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
 * {
   margin: 0;
@@ -80,6 +81,59 @@ a {
   .nav__input:checked + .nav__menu {
     clip-path: circle(100% at center);
   }
+}
+main {
+  background-color: rgba(255, 255, 255, 0.699);
+}
+
+.contenedor1 {
+  width: 20vh;
+}
+.contenedor1__pub {
+  width: 40px;
+}
+.contenedor1__marca {
+  height: max-content;
+  height: 100%;
+}
+
+.logo {
+  height: 20px;
+}
+
+@media (min-width: 900px) {
+  .contenedor1 {
+    background-image: url(../img/logo/lineaauto.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .titulo {
+    background-image: url(../img/banderas/banda.png);
+    background-size: 100px 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .presentación {
+    background-image: url(../img/fondo/Formulauno.png);
+    height: max-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+footer {
+  border: 3px solid rgb(0, 0, 0);
+  position: absolute;
+  bottom: 1;
+  width: 100%;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+main {
+    background-color: $color-fondotxt;
+}
+
+.contenedor1 {
+    width: 20vh;
+    &__pub {
+        width: 40px;
+    }
+    &__marca {
+        height: max-content;
+        height: 100%;
+    }
+    
+}
+
+.logo {
+    height: 20px;
+}
+
+.contenedor1{
+    @include monitor{
+        background-image: url(../img/logo/lineaauto.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.titulo {
+    @include monitor{
+        background-image: url(../img/banderas/banda.png);
+        background-size: 100px 110px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.presentación {
+    @include monitor {
+        background-image: url(../img/fondo/Formulauno.png);
+        height: max-content;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 
-
+/*navbar y reset agregado*/
 
 * {
     margin: 0;
@@ -58,7 +58,7 @@
 
 .nav__item:hover {
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
 
@@ -99,22 +99,26 @@ transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 
     }
 }
+
 /*fin del navbar*/
 
-.marca {
 
-    height: max-content;
-    height: 10 0%;
-}
-.marca__pub {
-    width: 40px;
-}
 
-.contenedor3 {
+.contenedor1 {
 
     height: 20vh;
 }
 
+.contenedor1__pub {
+    width: 40px;
+}
+
+.contenedor1__marca {
+
+    height: max-content;
+    height: 10 0%;
+}
+/*ya esta agregado*/
 .logo {
     height: 20px;
 }
@@ -133,7 +137,7 @@ transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 
     }
 
-    .contenedor3 {
+    .contenedor1 {
         background-image: url(../img/logo/lineaauto.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -142,7 +146,7 @@ transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 }
 
-
+/*ya esta agregado*/
 a {
     text-decoration: none;
 
@@ -157,25 +161,24 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     width: fit-content;
-
-
-}
-
-.parrafo {
     background-color: rgba(240, 248, 255, 0.644);
 }
 
-.lineas {
-    background-color: rgba(240, 248, 255, 0.644);
-}
 
+
+
+.cuerpo__banner {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+/*mediaqueri agregado*/
 @media (min-width: 900px) {
 
     .presentación {
 
         background-image: url(../img/fondo/Formulauno.png);
         height: max-content;
-
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -183,7 +186,7 @@ a {
 }
 
 
-.promo {
+.presentación__promo {
     background-color: rgba(255, 255, 255, 0.699);
 }
 
@@ -200,15 +203,15 @@ a {
 
 .tecnicos {
 
-    height: auto;
+    background-color: rgba(255, 255, 255, 0.541);
 }
 
-.operiario {
+.tecnicos__operiario {
 
     height: 100px;
 }
 
-.foto {
+.operario__foto {
 
     height: 100px;
 }
@@ -222,28 +225,25 @@ a {
 
 .publicidad {
 
-    border: 1px solid rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.726);
 }
 
 .publicidad__contenido {
-    padding: 1%;
 
+    padding: 1px;
 }
+
 form {
     background-color: rgba(240, 255, 255, 0.637);
 }
 
-
+/*ya esta agregado*/
 footer {
 
     border: 3px solid rgb(0, 0, 0);
     position: absolute;
     bottom: 1;
     width: 100%;
+    align-items: center;
 }
-
-
-
-
-
