@@ -54,13 +54,13 @@
     }
 }
 
-@media (max-width: 700px) {
-    .nav {
+
+.nav{
+    @include mobile {
         &__label {
             display: block;
             cursor: pointer;
         }
-
         &__menu {
             position: fixed;
             top: 80px;
@@ -75,7 +75,6 @@
             clip-path: circle(0 at center);
             transition: clip-path 1s ease-in-out;
         }
-
         &__input:checked+&__menu {
             clip-path: circle(100% at center);
 

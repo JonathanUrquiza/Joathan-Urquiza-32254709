@@ -6,3 +6,8 @@ footer {
     width: 100%;
     align-items: center;
 }
+footer{
+    @include monitor {
+        border: $border-gral;
+    }
+}

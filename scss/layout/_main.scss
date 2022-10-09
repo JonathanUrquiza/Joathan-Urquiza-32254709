@@ -1,18 +1,8 @@
 main {
     background-color: $color-fondotxt;
 }
+/*tabajar el header*/
 
-.contenedor1 {
-    width: 20vh;
-    &__pub {
-        width: 40px;
-    }
-    &__marca {
-        height: max-content;
-        height: 100%;
-    }
-    
-}
 
 .logo {
     height: 20px;
@@ -42,4 +32,54 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
     }
+}
+
+.cuerpo{
+    background-image: url(../img/logo/fondodetarjeta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: fit-content;
+    background-color: rgba(240, 248, 255, 0.644);
+    &__banner{
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+    }
+
+}
+.tecnicos{
+    background-color: $color-fondotxt;
+    &__operario{
+        height: 100px;
+    }
+}
+.operario__foto {
+    height: 100px;
+}
+
+.publicidad {
+    border: $border-gral;
+    background-color: $color-fondotxt;
+    &__contenido {
+        padding: 1px;
+    }
+}
+.referencia {
+
+    height: 100px;
+    width: 100px;
+}
+form {
+    background-color: rgba(240, 255, 255, 0.637);
+}
+
+.principal {
+
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    width: auto;
+    height: max-content;
+
+    text-align: center;
+
 }

@@ -12,6 +12,17 @@ a {
   text-decoration: none;
 }
 
+.contenedor1 {
+  height: 20vh;
+}
+.contenedor1__marca {
+  height: max-content;
+  height: 10 0%;
+}
+.contenedor1__pub {
+  width: 40px;
+}
+
 .nav {
   background: #293241;
   height: 80px;
@@ -82,21 +93,12 @@ a {
     clip-path: circle(100% at center);
   }
 }
+
 main {
   background-color: rgba(255, 255, 255, 0.699);
 }
 
-.contenedor1 {
-  width: 20vh;
-}
-.contenedor1__pub {
-  width: 40px;
-}
-.contenedor1__marca {
-  height: max-content;
-  height: 100%;
-}
-
+/*tabajar el header*/
 .logo {
   height: 20px;
 }
@@ -128,12 +130,67 @@ main {
   }
 }
 
+.cuerpo {
+  background-image: url(../img/logo/fondodetarjeta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: fit-content;
+  background-color: rgba(240, 248, 255, 0.644);
+}
+.cuerpo__banner {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+.tecnicos {
+  background-color: rgba(255, 255, 255, 0.699);
+}
+.tecnicos__operario {
+  height: 100px;
+}
+
+.operario__foto {
+  height: 100px;
+}
+
+.publicidad {
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.699);
+}
+.publicidad__contenido {
+  padding: 1px;
+}
+
+.referencia {
+  height: 100px;
+  width: 100px;
+}
+
+form {
+  background-color: rgba(240, 255, 255, 0.637);
+}
+
+.principal {
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  width: auto;
+  height: max-content;
+  text-align: center;
+}
+
 footer {
   border: 3px solid rgb(0, 0, 0);
   position: absolute;
   bottom: 1;
   width: 100%;
   align-items: center;
+}
+
+@media (min-width: 900px) {
+  footer {
+    border: 3px solid rgb(0, 0, 0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
