@@ -134,7 +134,7 @@ main {
   background-image: url(../img/logo/fondodetarjeta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: fit-content;
+  width: 100%;
   background-color: rgba(240, 248, 255, 0.644);
 }
 .cuerpo__banner {
@@ -145,15 +145,20 @@ main {
 
 .tecnicos {
   background-color: rgba(255, 255, 255, 0.699);
+  justify-content: space-evenly;
+  margin: 3px;
+  padding: 5px;
 }
 .tecnicos__operario {
-  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 2px;
+  border: 5px solid green;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 500px;
 }
-
-.operario__foto {
-  height: 100px;
-}
-
 .publicidad {
   border: 3px solid rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.699);
