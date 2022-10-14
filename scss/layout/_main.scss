@@ -1,6 +1,7 @@
 main {
     background-color: $color-fondotxt;
 }
+
 /*tabajar el header*/
 
 
@@ -8,16 +9,17 @@ main {
     height: 20px;
 }
 
-.contenedor1{
-    @include monitor{
+.contenedor1 {
+    @include monitor {
         background-image: url(../img/logo/lineaauto.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 }
+
 .titulo {
-    @include monitor{
+    @include monitor {
         background-image: url(../img/banderas/banda.png);
         background-size: 100px 110px;
         background-repeat: no-repeat;
@@ -28,64 +30,73 @@ main {
 .presentación {
     @include monitor {
         background-image: url(../img/fondo/Formulauno.png);
-        height: max-content;
+        height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
+        align-items: baseline;
     }
 }
 
-.cuerpo{
+.cuerpo {
     background-image: url(../img/logo/fondodetarjeta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     background-color: rgba(240, 248, 255, 0.644);
-    &__banner{
+
+    &__banner {
+        border: 5px solid rgb(252, 252, 252);
         height: 100%;
         width: 100%;
         padding: 5px;
     }
 
 }
-.tecnicos{
+
+.tecnicos {
     background-color: $color-fondotxt;
-    justify-content: space-evenly;
+
     margin: 3px;
     padding: 5px;
-    
-    &__operario{
+
+    &__operario {
+
+        width: 300px;
+        height: 200px;
         padding-top: 10px;
         padding-bottom: 10px;
         margin: 2px;
-        align-items: center;
-        justify-content: space-between;
-        width: 300px;
-        height: 500px;
+
+
+    }
+
+    &__foto {
+        height: 100px;
+        width: 100px;
     }
 }
+
+img {
+    max-width: 100px;
+    max-width: 100px;
+}
+
 .publicidad {
     border: $border-gral;
     background-color: $color-fondotxt;
+
     &__contenido {
         padding: 1px;
     }
 }
+
 .referencia {
 
     height: 100px;
     width: 100px;
 }
+
 form {
     background-color: rgba(240, 255, 255, 0.637);
-}
-
-.principal {
-
-    border: 0px solid rgb(0, 0, 0);
-    border-radius: 25px;
-    width: auto;
-    height: max-content;
-
-    text-align: center;
-
+    width: 100%;
 }
