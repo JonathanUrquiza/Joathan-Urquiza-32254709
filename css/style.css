@@ -10,6 +10,11 @@
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
 }
 
 .contenedor1 {
@@ -106,10 +111,6 @@ main {
   background-color: rgba(255, 255, 255, 0.699);
 }
 
-a {
-  text-decoration: none;
-}
-
 /*tabajar el header*/
 .logo {
   height: 20px;
@@ -133,35 +134,31 @@ a {
   }
 }
 
-.presentación {
-  margin: 2px;
-  padding: 2px;
-  gap: 2px;
-}
-@media (min-width: 900px) {
-  .presentación {
-    background-image: url(../../img/fondo/Formulauno.png);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: baseline;
-  }
-}
-.presentación__promo:hover {
-  background-color: rgba(255, 255, 255, 0.699);
-  border: 3px solid rgb(0, 0, 0);
-}
-.presentación__promo:active {
-  color: blue;
-  transform: scale(1.1, 1.1);
-}
-
 .cuerpo {
   background-image: url(../img/logo/fondodetarjeta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   background-color: rgba(240, 248, 255, 0.644);
+}
+.cuerpo__presentación {
+  margin: 2px;
+  padding: 2px;
+  gap: 2px;
+}
+@media (max-width: 700px) {
+  .cuerpo__promo {
+    background-color: rgba(255, 255, 255, 0.699);
+    font-size: 1.5rem;
+  }
+}
+.cuerpo__promo:hover {
+  background-color: rgba(255, 255, 255, 0.699);
+  border: 3px solid rgb(0, 0, 0);
+}
+.cuerpo__promo:active {
+  color: blue;
+  transform: scale(1.1, 1.1);
 }
 .cuerpo__banner {
   border: 5px solid rgb(252, 252, 252);
