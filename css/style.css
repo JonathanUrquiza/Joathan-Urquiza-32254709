@@ -20,7 +20,15 @@ a {
   height: 10 0%;
 }
 .contenedor1__pub {
-  width: 40px;
+  height: 60px;
+  width: 50px;
+}
+.contenedor1__pub:hover {
+  background-color: rgba(255, 255, 255, 0.699);
+  border: 1px solid black;
+}
+.contenedor1__pub:active {
+  transform: scale(1.2, 1.2);
 }
 
 .nav {
@@ -98,6 +106,10 @@ main {
   background-color: rgba(255, 255, 255, 0.699);
 }
 
+a {
+  text-decoration: none;
+}
+
 /*tabajar el header*/
 .logo {
   height: 20px;
@@ -121,14 +133,27 @@ main {
   }
 }
 
+.presentación {
+  margin: 2px;
+  padding: 2px;
+  gap: 2px;
+}
 @media (min-width: 900px) {
   .presentación {
-    background-image: url(../img/fondo/Formulauno.png);
+    background-image: url(../../img/fondo/Formulauno.png);
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: baseline;
   }
+}
+.presentación__promo:hover {
+  background-color: rgba(255, 255, 255, 0.699);
+  border: 3px solid rgb(0, 0, 0);
+}
+.presentación__promo:active {
+  color: blue;
+  transform: scale(1.1, 1.1);
 }
 
 .cuerpo {

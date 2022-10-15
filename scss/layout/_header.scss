@@ -7,6 +7,14 @@
     }
 
     &__pub {
-        width: 40px;
+        height: 60px;
+        width: 50px;
+    }
+    &__pub:hover{
+        background-color: $color-fondotxt;
+    border: 1px solid black;
+    }
+    &__pub:active{
+        transform: scale(1.2, 1.2);
     }
 }

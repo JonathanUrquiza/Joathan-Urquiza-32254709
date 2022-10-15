@@ -1,7 +1,9 @@
 main {
     background-color: $color-fondotxt;
 }
-
+a {
+    text-decoration: none;
+}
 /*tabajar el header*/
 
 
@@ -29,12 +31,27 @@ main {
 
 .presentación {
     @include monitor {
-        background-image: url(../img/fondo/Formulauno.png);
+        background-image: url(../../img/fondo/Formulauno.png);
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         align-items: baseline;
+        
     }
+    
+    &__promo:hover{
+    background-color: $color-fondotxt;
+    border: $border-gral;
+    }
+    &__promo:active{
+        color: blue;
+        transform: scale(1.1, 1.1);
+    
+
+    }
+    margin: 2px;
+    padding: 2px;
+    gap: 2px;
 }
 
 .cuerpo {
@@ -43,6 +60,7 @@ main {
     background-size: cover;
     width: 100%;
     background-color: rgba(240, 248, 255, 0.644);
+    
 
     &__banner {
         border: 5px solid rgb(252, 252, 252);
