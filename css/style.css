@@ -88,6 +88,8 @@ a:hover {
   .nav__label {
     display: block;
     cursor: pointer;
+    position: sticky;
+    top: 5px;
   }
   .nav__menu {
     position: fixed;
@@ -108,11 +110,6 @@ a:hover {
   }
 }
 
-main {
-  background-color: rgba(255, 255, 255, 0.699);
-}
-
-/*tabajar el header*/
 .logo {
   height: 20px;
 }
@@ -139,7 +136,8 @@ main {
   background-image: url(../img/logo/fondodetarjeta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
   background-color: rgba(240, 248, 255, 0.644);
 }
 .cuerpo__presentación {
@@ -166,6 +164,11 @@ main {
   height: 100%;
   width: 100%;
   padding: 5px;
+}
+.cuerpo__whatsapp {
+  position: fixed;
+  left: 20px;
+  bottom: 40px;
 }
 
 .tecnicos {
@@ -198,7 +201,10 @@ img {
   padding: 1px;
 }
 
-.referencia {
+.galeria {
+  background-color: rgba(255, 255, 255, 0.699);
+}
+.galeria__referencia {
   height: 100px;
   width: 100px;
 }
