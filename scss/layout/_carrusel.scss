@@ -1,0 +1,30 @@
+#conteItemsCarrusel {
+
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.itemCarrusel {
+    height: 200px;
+    position: relative;
+}
+
+.tarjetaCarrusel {
+    
+    height: 100%;
+    
+}
+
+.flechasCarrusel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+

@@ -76,11 +76,14 @@
         padding: 5px;
     }
 
-    &__whatsapp {
-        position: fixed;
-        left: 20px;
-        bottom: 40px;
-    }
+    
+}
+#whatsapp {
+    height: 50px;
+    position: fixed;
+    left: 20px;
+    bottom: 40px;
+   
 }
 
 .tecnicos {
@@ -92,7 +95,7 @@
     &__operario {
 
         width: 300px;
-        height: 200px;
+        height: auto;
         padding-top: 10px;
         padding-bottom: 10px;
         margin: 2px;
@@ -100,16 +103,9 @@
 
     }
 
-    &__foto {
-        height: 100px;
-        width: 100px;
-    }
+
 }
 
-img {
-    max-width: 100px;
-    max-width: 100px;
-}
 
 .publicidad {
     border: $border-gral;
@@ -120,16 +116,7 @@ img {
     }
 }
 
-.galeria {
-    background-color: $color-fondotxt;
 
-    &__referencia {
-
-        height: 100px;
-        width: 100px;
-    }
-
-}
 
 
 form {
