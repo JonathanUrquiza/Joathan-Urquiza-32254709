@@ -31,6 +31,7 @@
     background-position: center;
     background-attachment: fixed;
     background-color: rgba(240, 248, 255, 0.644);
+    height: 100vh;
 
 
     &__presentación {
@@ -84,6 +85,9 @@
     left: 20px;
     bottom: 40px;
    
+}
+.galeria {
+    height: 100%;
 }
 
 .tecnicos {
