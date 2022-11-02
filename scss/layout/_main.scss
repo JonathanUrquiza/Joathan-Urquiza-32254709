@@ -8,17 +8,19 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        
+    }
+    &__titulo {
+        @include monitor {
+         
+            background-size: 100px 110px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
 }
 
-.titulo {
-    @include monitor {
-        background-image: url(../img/banderas/banda.png);
-        background-size: 100px 110px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
+
 
 
 
@@ -30,7 +32,12 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
+    
+
+    section {
+        background-color: $color-fondotxt;
+    }
 
 
 
@@ -128,6 +135,7 @@
 
 
 form {
-    background-color: rgba(240, 255, 255, 0.637);
-    width: 100%;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
 }

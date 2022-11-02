@@ -125,10 +125,8 @@ i {
     background-position: center;
   }
 }
-
 @media (min-width: 900px) {
-  .titulo {
-    background-image: url(../img/banderas/banda.png);
+  .contenedor1__titulo {
     background-size: 100px 110px;
     background-repeat: no-repeat;
     background-position: center;
@@ -141,13 +139,18 @@ i {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-color: rgba(240, 248, 255, 0.644);
-  height: 100vh;
+  height: 100%;
+}
+.cuerpo section {
+  background-color: rgba(255, 255, 255, 0.699);
 }
 .cuerpo__presentación {
   margin: 2px;
   padding: 2px;
   gap: 2px;
+}
+.cuerpo__promo {
+  background-color: rgba(255, 255, 255, 0.699);
 }
 @media (max-width: 700px) {
   .cuerpo__promo {
@@ -203,8 +206,9 @@ i {
 }
 
 form {
-  background-color: rgba(240, 255, 255, 0.637);
-  width: 100%;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 
 .contenedor {
