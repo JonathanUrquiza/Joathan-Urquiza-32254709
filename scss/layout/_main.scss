@@ -32,9 +32,8 @@
     background-attachment: fixed;
     background-color: rgba(240, 248, 255, 0.644);
     height: 100vh;
-    &__promo {
-        background-color: rgba(240, 248, 255, 0.644);
-    }
+
+
 
 
 
@@ -50,6 +49,8 @@
     }
 
     &__promo {
+
+        background-color: rgba(240, 248, 255, 0.644);
         @include mobile {
 
             background-color: $color-fondotxt;
