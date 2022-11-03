@@ -5,122 +5,96 @@
 .contenedor1 {
     @include monitor {
         background-image: url(../img/logo/lineaauto.png);
-        background-size: contain;
+        background-size: 75%;
         background-repeat: no-repeat;
         background-position: center;
-        
+    }
+    @include mobile {
+        background-image: url(../img/logo/lineaauto.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     &__titulo {
+        font-size: 3rem;
+
         @include monitor {
-         
             background-size: 100px 110px;
             background-repeat: no-repeat;
             background-position: center;
         }
     }
+  
 }
 
-
-
-
+section {
+    background-color: $color-fondotxt;
+}
 
 .cuerpo {
-
-
     background-image: url(../img/logo/fondodetarjeta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100%;
-    
-
-    section {
-        background-color: $color-fondotxt;
-    }
-
-
-
-
 
     &__presentación {
         margin: 2px;
         padding: 2px;
         gap: 2px;
-
-
-
-
-
     }
 
     &__promo {
+        border: 1px solid black;
+        border-radius: 25px;
 
-        background-color: $color-fondotxt;
         @include mobile {
-
-            background-color: $color-fondotxt;
             font-size: 1.5rem;
         }
     }
 
     &__promo:hover {
-
-
-        background-color: $color-fondotxt;
         border: $border-gral;
     }
 
     &__promo:active {
         color: blue;
         transform: scale(1.1, 1.1);
-
-
     }
 
-
-
-
     &__banner {
-        border: 5px solid rgb(252, 252, 252);
+        border: 5px solid rgb(252, 4, 4);
         height: 100%;
         width: 100%;
         padding: 5px;
     }
-
-    
 }
+
 #whatsapp {
     height: 50px;
     position: fixed;
     left: 20px;
     bottom: 40px;
-   
 }
+
 .galeria {
     height: 100%;
 }
 
 .tecnicos {
     background-color: $color-fondotxt;
-
     margin: 3px;
     padding: 5px;
 
     &__operario {
-
         width: 300px;
         height: auto;
         padding-top: 10px;
         padding-bottom: 10px;
         margin: 2px;
-
-
     }
-
-
 }
-
 
 .publicidad {
     border: $border-gral;
@@ -130,9 +104,6 @@
         padding: 1px;
     }
 }
-
-
-
 
 form {
     padding: 20px;

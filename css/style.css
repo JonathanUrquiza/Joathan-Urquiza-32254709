@@ -120,10 +120,21 @@ i {
 @media (min-width: 900px) {
   .contenedor1 {
     background-image: url(../img/logo/lineaauto.png);
-    background-size: contain;
+    background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+@media (max-width: 700px) {
+  .contenedor1 {
+    background-image: url(../img/logo/lineaauto.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.contenedor1__titulo {
+  font-size: 3rem;
 }
 @media (min-width: 900px) {
   .contenedor1__titulo {
@@ -131,6 +142,10 @@ i {
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.699);
 }
 
 .cuerpo {
@@ -141,25 +156,21 @@ i {
   background-attachment: fixed;
   height: 100%;
 }
-.cuerpo section {
-  background-color: rgba(255, 255, 255, 0.699);
-}
 .cuerpo__presentación {
   margin: 2px;
   padding: 2px;
   gap: 2px;
 }
 .cuerpo__promo {
-  background-color: rgba(255, 255, 255, 0.699);
+  border: 1px solid black;
+  border-radius: 25px;
 }
 @media (max-width: 700px) {
   .cuerpo__promo {
-    background-color: rgba(255, 255, 255, 0.699);
     font-size: 1.5rem;
   }
 }
 .cuerpo__promo:hover {
-  background-color: rgba(255, 255, 255, 0.699);
   border: 3px solid rgb(0, 0, 0);
 }
 .cuerpo__promo:active {
@@ -167,7 +178,7 @@ i {
   transform: scale(1.1, 1.1);
 }
 .cuerpo__banner {
-  border: 5px solid rgb(252, 252, 252);
+  border: 5px solid rgb(252, 4, 4);
   height: 100%;
   width: 100%;
   padding: 5px;
