@@ -1,22 +1,12 @@
 .contenedor1 {
-    height: 20vh;
+    height: 30%;
 
     &__marca {
-        height: max-content;
-        height: 10 0%;
+        height: 100%;
     }
 
     &__pub {
         height: 60px;
         width: 50px;
-    }
-
-    &__pub:hover {
-        background-color: $color-fondotxt;
-        border: 1px solid black;
-    }
-
-    &__pub:active {
-        transform: scale(1.2, 1.2);
     }
 }

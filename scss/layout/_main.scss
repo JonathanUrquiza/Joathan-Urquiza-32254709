@@ -1,7 +1,6 @@
 .logo {
     height: 20px;
 }
-
 .contenedor1 {
     @include monitor {
         background-image: url(../img/logo/lineaauto.png);
@@ -17,52 +16,30 @@
     }
     &__titulo {
         font-size: 3rem;
-
         @include monitor {
             background-size: 100px 110px;
             background-repeat: no-repeat;
             background-position: center;
         }
     }
-  
 }
-
-section {
-    background-color: $color-fondotxt;
-}
-
-.cuerpo {
+main {
     background-image: url(../img/logo/fondodetarjeta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100%;
-
+}
+section {
+    background-color: $color-fondotxt;
+}
+.cuerpo {
     &__presentación {
         margin: 2px;
         padding: 2px;
         gap: 2px;
     }
-
-    &__promo {
-        border: 1px solid black;
-        border-radius: 25px;
-
-        @include mobile {
-            font-size: 1.5rem;
-        }
-    }
-
-    &__promo:hover {
-        border: $border-gral;
-    }
-
-    &__promo:active {
-        color: blue;
-        transform: scale(1.1, 1.1);
-    }
-
     &__banner {
         border: 5px solid rgb(252, 4, 4);
         height: 100%;
@@ -70,29 +47,60 @@ section {
         padding: 5px;
     }
 }
+.tarjeta {
+    &__promo {
+        border: 1px solid black;
+        border-radius: 25px;
+        width: 100%;
+        @include mobile {
+            font-size: 1.5rem;
+        }
+    }
+    &__promo:hover {
+        border: $border-gral;
+    }
+    &__boton {
+        background-color: whitesmoke;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &__boton:active {
+        border: 3px solid black;
+    }
 
-#whatsapp {
-    height: 50px;
-    position: fixed;
-    left: 20px;
-    bottom: 40px;
 }
-
+#whatsapp {
+    @include monitor {
+        display: none;
+    }
+    @include mobile {
+        height: 50px;
+        position: fixed;
+        left: 20px;
+        bottom: 40px;
+    }
+}
 .galeria {
     height: 100%;
 }
-
 .tecnicos {
     background-color: $color-fondotxt;
-    margin: 3px;
     padding: 5px;
 
     &__operario {
-        width: 300px;
-        height: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        width: 184px;
+        height: 100%;
+        padding: 5px;
         margin: 2px;
+    }
+
+    &__foto {
+        width: 100px;
+        height: 100px;
     }
 }
 

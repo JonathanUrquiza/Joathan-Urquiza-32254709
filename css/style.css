@@ -12,31 +12,19 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: black;
-}
-
 i {
   color: white;
 }
 
 .contenedor1 {
-  height: 20vh;
+  height: 30%;
 }
 .contenedor1__marca {
-  height: max-content;
-  height: 10 0%;
+  height: 100%;
 }
 .contenedor1__pub {
   height: 60px;
   width: 50px;
-}
-.contenedor1__pub:hover {
-  background-color: rgba(255, 255, 255, 0.699);
-  border: 1px solid black;
-}
-.contenedor1__pub:active {
-  transform: scale(1.2, 1.2);
 }
 
 .nav {
@@ -144,11 +132,7 @@ i {
   }
 }
 
-section {
-  background-color: rgba(255, 255, 255, 0.699);
-}
-
-.cuerpo {
+main {
   background-image: url(../img/logo/fondodetarjeta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,26 +140,15 @@ section {
   background-attachment: fixed;
   height: 100%;
 }
+
+section {
+  background-color: rgba(255, 255, 255, 0.699);
+}
+
 .cuerpo__presentación {
   margin: 2px;
   padding: 2px;
   gap: 2px;
-}
-.cuerpo__promo {
-  border: 1px solid black;
-  border-radius: 25px;
-}
-@media (max-width: 700px) {
-  .cuerpo__promo {
-    font-size: 1.5rem;
-  }
-}
-.cuerpo__promo:hover {
-  border: 3px solid rgb(0, 0, 0);
-}
-.cuerpo__promo:active {
-  color: blue;
-  transform: scale(1.1, 1.1);
 }
 .cuerpo__banner {
   border: 5px solid rgb(252, 4, 4);
@@ -184,11 +157,44 @@ section {
   padding: 5px;
 }
 
-#whatsapp {
-  height: 50px;
-  position: fixed;
-  left: 20px;
-  bottom: 40px;
+.tarjeta__promo {
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .tarjeta__promo {
+    font-size: 1.5rem;
+  }
+}
+.tarjeta__promo:hover {
+  border: 3px solid rgb(0, 0, 0);
+}
+.tarjeta__boton {
+  background-color: whitesmoke;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.tarjeta__boton:active {
+  border: 3px solid black;
+}
+
+@media (min-width: 900px) {
+  #whatsapp {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  #whatsapp {
+    height: 50px;
+    position: fixed;
+    left: 20px;
+    bottom: 40px;
+  }
 }
 
 .galeria {
@@ -197,15 +203,17 @@ section {
 
 .tecnicos {
   background-color: rgba(255, 255, 255, 0.699);
-  margin: 3px;
   padding: 5px;
 }
 .tecnicos__operario {
-  width: 300px;
-  height: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 184px;
+  height: 100%;
+  padding: 5px;
   margin: 2px;
+}
+.tecnicos__foto {
+  width: 100px;
+  height: 100px;
 }
 
 .publicidad {
