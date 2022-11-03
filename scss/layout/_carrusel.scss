@@ -1,43 +1,7 @@
-.contenedor {
-    width: 100%;
-    position: relative;
-    height: 780px;
-}
+.galeria {
+    width: 400px;
+    padding: 10px;
+    border: 3px solid black;
 
-.botones {
-    font-size: 30px;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 50%;
-    background-color: rgba($color: #000000, $alpha: 0.7);
-    text-align: center;
-    font-weight: bold;
-    position: absolute;
-    color: #fff;
-    box-shadow: 0 0 10px rgba (255, 255, 255, 6);
-    -webkit-transition: all .3% ease;
-    -o-transition: all .3% ease;
-}
-
-.botones:hover {
-    cursor: pointer;
-    transform: scale(1.2, 1.2);
-}
-
-.atras {
-    left: 2%;
-    top: calc(50% - 70px);
-}
-
-.adelante {
-    right: 2%;
-    top: calc(50% - 70px);
-}
-#imagen {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 20px;
-    height: 50%;
-    width: 50%;     
+    
 }

@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="../css/styel.css">
     <title>galería</title>
 </head>
+
 <body class="container-fluid">
     <header>
-        <div class="contenedor1 d-md-flex align-items-md-end d-sm-flex flex-sm-row justify-content-sm-between align-items-sm-center m-2">
+        <div
+            class="contenedor1 d-md-flex align-items-md-end d-sm-flex flex-sm-row justify-content-sm-between align-items-sm-center m-2">
             <h1 class="text-center text-sm-start">Taller Mecánico</h1>
             <div class="text-center text-sm-end">
                 <a href="https://www.chevrolet.com.ar/" target="_blank"><img src="../img/logo/chevrolet.png"
@@ -28,41 +30,63 @@
                 <a href="https://autoahorro.strianese.com.ar/" target="_blank"><img src="../img/logo/vw.png"
                         alt="volkswagen" class="contenedor1__pub"></a>
             </div>
-            
+
         </div>
-            <nav class="nav col-12 col-md-12">
-                <div class="nav__container">
-                    <h1 class="nav__logo"></h1>
-                    <div>
-                        <label for="buscar">Buscar</label>
-                        <input type="text" id="buscar">
-                        <input type="submit" value="buscar">
-                    </div>
-                    <label for="menu" class="nav__label">
-                        <img src="../assets/menu.svg" alt="" class="nav__img">
-                    </label>
-                    <input type="checkbox" id="menu" class="nav__input">
-                    <div class="nav__menu">
-                        <a href="../index.html" class="nav__item">El Taller</a>
-                        <a href="galeria.html" class="nav__item">Galeria</a>
-                        <a href="unetealclub.html" class="nav__item">Unete al club</a>
-                        <a href="comollegar.html" class="nav__item">Como llegar?</a>
-                    </div>
+        <nav class="nav col-12 col-md-12">
+            <div class="nav__container">
+                <h1 class="nav__logo"></h1>
+                <div>
+                    <label for="buscar">Buscar</label>
+                    <input type="text" id="buscar">
+                    <input type="submit" value="buscar">
                 </div>
-            </nav>
+                <label for="menu" class="nav__label">
+                    <img src="../assets/menu.svg" alt="" class="nav__img">
+                </label>
+                <input type="checkbox" id="menu" class="nav__input">
+                <div class="nav__menu">
+                    <a href="../index.html" class="nav__item">El Taller</a>
+                    <a href="galeria.html" class="nav__item">Galeria</a>
+                    <a href="unetealclub.html" class="nav__item">Unete al club</a>
+                    <a href="comollegar.html" class="nav__item">Como llegar?</a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <hr>
-    <main class="row galeria cuerpo">
-        <div class="contenedor">
-            <div class="atras botones">
-                &#60
-            </div>
-            <div class="adelante botones">
-                &#62
-            </div>
-            <img src="../img/carrusel/descarga.jpg" alt="" id="imagen">
-        </div>
-        <section class="galeria__video col-sm-12 col-lg-8">
+    <main>
+
+        <section>
+            <div id="carouselExampleControls" class="carousel slide p-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/carrusel/aplicaciones-aprender-mecanica.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/carrusel/check.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/carrusel/refrigerante.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/carrusel/perdida.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carrusel/motor.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+
+        <section class="galeria__video ">
             <h4>Videos</h4>
             <iframe width="200" height="200" src="https://www.youtube.com/embed/OHyJE579Wkk"
                 title="YouTube video player" frameborder="0"
@@ -111,4 +135,5 @@
     <script src="../js/main.js"></script>
     <script src="https://kit.fontawesome.com/d769a89d74.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
