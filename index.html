@@ -13,44 +13,56 @@
 
 <body>
     <header>
-        <div class="contenedor1 d-md-flex align-items-md-end d-sm-flex flex-sm-row justify-content-sm-between align-items-sm-center m-2">
+        <div
+            class="contenedor1 d-md-flex align-items-md-end d-sm-flex flex-sm-row justify-content-sm-between align-items-sm-center m-2">
             <h1 class="text-center text-sm-start">Taller Mecánico</h1>
-            <div class="text-center text-sm-end">
-                <a href="https://www.chevrolet.com.ar/" target="_blank"><img src="../img/logo/chevrolet.png"
-                        alt="chevrolet" class="contenedor1__pub"></a>
-                <a href="https://www.fiat.com.ar/" target="_blank"><img src="../img/logo/fiat.png" alt="fiat"
-                        class="contenedor1__pub"></a>
-                <a href="https://www.peugeotstore.com.ar/" target="_blank"><img src="../img/logo/Puegeot.png"
-                        alt="peugeot" class="contenedor1__pub"></a>
-                <a href="https://www.citroen.com.ar/" target="_blank"><img src="../img/logo/Citrouen.png" alt="citroen"
-                        class="contenedor1__pub"></a>
-                <a href="https://autoahorro.strianese.com.ar/" target="_blank"><img src="../img/logo/vw.png"
-                        alt="volkswagen" class="contenedor1__pub"></a>
-            </div>
         </div>
-            <nav class="nav">
-                <div class="nav__container">
-                    <h1 class="nav__logo"></h1>
-                    <div>
-                        <input type="text" id="buscar">
-                        <input type="submit" value="buscar">
-                    </div>
-                    <label for="menu" class="nav__label">
-                        <img src="assets/menu.svg" alt="" class="nav__img">
-                    </label>
-                    <input type="checkbox" id="menu" class="nav__input">
-                    <div class="nav__menu">
-                        <a href="pages/nosotros.html" class="nav__item">El Taller</a>
-                        <a href="pages/galeria.html" class="nav__item">Galeria</a>
-                        <a href="pages/unetealclub.html" class="nav__item">Unete al club</a>
-                        <a href="pages/comollegar.html" class="nav__item">Como llegar?</a>
-                    </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="pages/nosotros.html">Nosotros</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/../index.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Contactos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pages/unetealclub.html">Deja un mensaje</a></li>
+                                <li><a class="dropdown-item" href="pages/comollegar.html">¿Cómo llegas?</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="https://www.mercadopago.com.ar/">Realizar un pago</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled"></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
     <main>
-        <section class="cuerpo d-xl-flex flex-xl-row justify-content-xl-around">
-            <div class=" tarjeta__promo d-lg-flex flex-lg-column justify-content-lg-around align-items-lg-center text-decoration-none p-3">
+        <section class="cuerpo d-md-flex flex-md-row justify-content-xl-around">
+            <div
+                class=" tarjeta__promo d-lg-flex flex-lg-column justify-content-lg-around align-items-lg-center text-decoration-none p-3">
                 <h2>service de motor</h2>
                 <ul>
                     <li>Aceite</li>
@@ -62,35 +74,39 @@
                 <p>$14000</p>
                 <a href="https://www.mercadolibre.com.ar/" target="_blank" class="tarjeta__boton">solicitar turno</a>
             </div>
-            <div class=" tarjeta__promo d-flex flex-column justify-content-around align-items-center text-decoration-none p-3">
+            <div
+                class=" tarjeta__promo d-flex flex-column justify-content-around align-items-center text-decoration-none p-3">
                 <h2>Cubiertas</h2>
                 <p>Cubierta 195x55x16</p>
                 <p>$35000</p>
                 <a href="https://www.mercadolibre.com.ar/" target="_blank" class="tarjeta__boton">solicitar turno</a>
             </div>
-            <div class="tarjeta__promo d-flex flex-column justify-content-around align-items-center text-decoration-none p-3">
+            <div
+                class="tarjeta__promo d-flex flex-column justify-content-around align-items-center text-decoration-none p-3">
                 <h2>Diagnostico</h2>
                 <p>Verificación de estado del vehículo mediante informe.</p>
                 <p>$15000</p>
                 <a href="https://www.mercadolibre.com.ar/" target="_blank" class="tarjeta__boton">solicitar turno</a>
             </div>
-            <div class="tarjeta__promo d-flex flex-column justify-content-around align-items-center text-decoration-none p-3">
+            <div
+                class="tarjeta__promo d-flex flex-column justify-content-around align-items-center text-decoration-none p-3">
                 <h2>Verificación (VTV).</h2>
                 <p>Diagnostico orientado e inspección orientado a la verificación técnica vehicular.</p>
                 <p>$10000</p>
                 <a href="https://www.mercadolibre.com.ar/" target="_blank" class="tarjeta__boton">solicitar turno</a>
             </div>
         </section>
-            <div class=" text-white bg-dark cuerpo__banner">
-                <h2>Capacitaciones</h2>
-                <p>Si tenes problemas con tu auto, si es tu primer auto y no tenes idea de que hacer antes de
-                    arrancarlo
-                    o como cambiar la rueda si pinchastes, este curso prático es para vos, en nuestro curso vasa
-                    poder
-                    saber que hacer cuando lo necesites, para mas informacion hace click <a
-                        href="https://www.w3schools.com">aca!</a></p>
-            </div>
-        <div class="cuerpo__whatsapp"><a href="https://www.whatsapp.com/?lang=es"><img src="img/logo/whatsapp.png" alt="whatsapp"id="whatsapp"></a></div>
+        <div class=" text-white bg-dark cuerpo__banner">
+            <h2>Capacitaciones</h2>
+            <p>Si tenes problemas con tu auto, si es tu primer auto y no tenes idea de que hacer antes de
+                arrancarlo
+                o como cambiar la rueda si pinchastes, este curso prático es para vos, en nuestro curso vasa
+                poder
+                saber que hacer cuando lo necesites, para mas informacion hace click <a
+                    href="https://www.w3schools.com">aca!</a></p>
+        </div>
+        <div class="cuerpo__whatsapp"><a href="https://www.whatsapp.com/?lang=es"><img src="img/logo/whatsapp.png"
+                    alt="whatsapp" id="whatsapp"></a></div>
     </main>
     <footer class="d-flex flex-row flex-wrap justify-content-around align-items-center">
         <div class="text-center">

@@ -1,28 +1,7 @@
 .logo {
     height: 20px;
 }
-.contenedor1 {
-    @include monitor {
-        background-image: url(../img/logo/lineaauto.png);
-        background-size: 75%;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    @include mobile {
-        background-image: url(../img/logo/lineaauto.png);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    &__titulo {
-        font-size: 3rem;
-        @include monitor {
-            background-size: 100px 110px;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-    }
-}
+
 main {
     background-image: url(../img/logo/fondodetarjeta.jpg);
     background-repeat: no-repeat;
@@ -35,6 +14,7 @@ section {
     background-color: $color-fondotxt;
 }
 .cuerpo {
+
     &__presentación {
         margin: 2px;
         padding: 2px;
@@ -46,6 +26,7 @@ section {
         width: 100%;
         padding: 5px;
     }
+    background-color: $color-fondotxt;
 }
 .tarjeta {
     &__promo {
@@ -82,10 +63,8 @@ section {
         position: fixed;
         left: 20px;
         bottom: 40px;
+        z-index: 1;
     }
-}
-.galeria {
-    height: 100%;
 }
 .tecnicos {
     background-color: $color-fondotxt;
@@ -96,6 +75,9 @@ section {
         height: 100%;
         padding: 5px;
         margin: 2px;
+        border: $border-gral;
+        border-radius: 15px;
+        background-color: rgba(255, 68, 0, 0.61);
     }
 
     &__foto {
@@ -113,8 +95,8 @@ section {
     }
 }
 
-form {
-    padding: 20px;
+.mensaje {
     border: 2px solid black;
     border-radius: 20px;
+    background-color: rgb(206, 191, 186);
 }
