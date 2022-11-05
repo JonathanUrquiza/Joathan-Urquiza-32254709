@@ -1,0 +1,13 @@
+.tarjeta {
+    &__boton {
+        background-color: whitesmoke;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    &__boton:active {
+        border: 3px solid black;
+    }
+}

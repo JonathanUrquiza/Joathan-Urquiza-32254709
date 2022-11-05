@@ -11,13 +11,10 @@
     <title>unete al club</title>
 </head>
 
-<body class="container-fluid">
+<body>
     <header>
-        <div
-            class="contenedor1 d-md-flex align-items-md-end d-sm-flex flex-sm-row justify-content-sm-between align-items-sm-center m-2">
-            <h1 class="text-center text-sm-start">Taller Mecánico</h1>
-        </div>
         <nav class="navbar navbar-expand-lg">
+            <h1 class="text-center text-sm-start">Taller Mecánico</h1>
             <div class="container-fluid">
                 <a class="navbar-brand" href="nosotros.html">Nosotros</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,7 +41,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="https://www.mercadopago.com.ar/">Realizar un pago</a>
+                                <li><a class="dropdown-item" href="pago.html">Realizar un pago</a>
                                 </li>
                             </ul>
                         </li>
@@ -53,8 +50,8 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search">
+                        <button class="btn btn-outline-success tarjeta__boton" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
@@ -98,8 +95,8 @@
                         <textarea name="" id="mensaje" cols="auto" rows="auto" class="form-control"></textarea>
                         <label for="">¿Desea recibir noticias?</label>
                         <input type="checkbox">
-                        <button class="w-100 btn btn-lg bg-info m-2" type="submit">Enviar</button>
-                        <input type="reset" value="vaciar formulario"class="w-100 btn btn-lg bg-danger">
+                        <button class="w-100 btn btn-lg m-2 tarjeta__boton" type="submit">Enviar</button>
+                        <button class="w-100 btn btn-lg m-2 tarjeta__boton bg-danger" type="reset" value="vaciar formulario">vaciar formulario</button>
                     </div>
                 </form>
             </div>
@@ -119,7 +116,7 @@
                             <input type="checkbox" value="remember-me"> Recuerdame
                         </label>
                     </div>
-                    <button class="w-100 btn btn-lg bg-info" type="submit">Ingresar</button>
+                    <button class="w-100 btn btn-lg bg-info tarjeta__boton" type="submit">Ingresar</button>
                     <hr class="my-4">
                     <small>Al hacer clic en Registrarse, acepta los términos de uso.</small>
                 </form>

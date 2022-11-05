@@ -13,6 +13,16 @@ main {
 section {
     background-color: $color-fondotxt;
 }
+.lineas li{
+    border: $border-gral;
+    background-color: aqua;
+    color: blue;
+    padding: 1px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    width: 50px;
+
+}
 .cuerpo {
 
     &__presentación {
@@ -39,18 +49,6 @@ section {
     }
     &__promo:hover {
         border: $border-gral;
-    }
-    &__boton {
-        background-color: whitesmoke;
-        border-top: 2px solid black;
-        border-right: 2px solid black;
-        border-radius: 15px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    &__boton:active {
-        border: 3px solid black;
     }
 
 }
