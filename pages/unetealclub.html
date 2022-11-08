@@ -58,78 +58,80 @@
         </nav>
     </header>
     <main>
-        <section class="presentación__cuerpo row text-center">
-            <div class="col-md-10 mx-auto col-lg-5">
-                <h2 class="col-8 offset-2">Déjanos un mensaje!</h2>
-                <form action="" class="mensaje p-4 p-md-5" id="elform">
-                    <div  class="mb-3">
-                        <input type="text" class="form-control text-center" id="floatingInputNombre" placeholder="Nombre">
-                        <label for="floatingInputNombre"></label>
-                        <input type="text" class="form-control text-center" id="floatingInputApellido" placeholder="Apellido">
-                        <label for="floatingInputApellido"></label>
+        <section class="container">
+            <div class="row text-cente cuerpo">
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <h2 class="col-8 offset-2">Déjanos un mensaje!</h2>
+                    <form action="" class="mensaje p-4 p-md-5" id="elform">
+                        <div  class="mb-3">
+                            <input type="text" class="form-control text-center" id="floatingInputNombre" placeholder="Nombre">
+                            <label for="floatingInputNombre"></label>
+                            <input type="text" class="form-control text-center" id="floatingInputApellido" placeholder="Apellido">
+                            <label for="floatingInputApellido"></label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <label for="floatingfechaNac"></label>
+                            <input type="date" id="floatinginputfechaNac" class="form-control text-center"></input>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInputmail" placeholder="name@example.com">
+                            <label for="floatingInputmail" class=" text-center">Email</label>
+                        </div>
+                        <div>
+                            <label for="asuntosmail">Asunto</label>
+                            <select id="asuntosmail" class="form-control">
+                                <option value="turnos">Turnos</option>
+                                <option value="Contactanos">Contactanos</option>
+                                <option value="otro">otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">mujer</label>
+                            <input type="radio" name="selecciongenero" value="mujer">
+                            <label for="">hombre</label>
+                            <input type="radio" name="selecciongenero" value="hombre">
+                            <label for="">otros</label>
+                            <input type="radio" name="selecciongenero" value="otro">
+                            <label for="mensaje">Dejenos su mensaje</label>
+                            <textarea name="" id="mensaje" cols="auto" rows="auto" class="form-control"></textarea>
+                            <label for="">¿Desea recibir noticias?</label>
+                            <input type="checkbox">
+                            <button class="w-100 btn btn-lg m-2 tarjeta__boton" type="submit">Enviar</button>
+                            <button class="w-100 btn btn-lg m-2 tarjeta__boton bg-danger" type="reset" value="vaciar formulario">vaciar formulario</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <h2>Registrate!</h2>
+                    <form class="p-4 p-md-5 mensaje">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">contraseña</label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Recuerdame
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg bg-info tarjeta__boton" type="submit">Ingresar</button>
+                        <hr class="my-4">
+                        <small>Al hacer clic en Registrarse, acepta los términos de uso.</small>
+                    </form>
+                </div>
+                <div class="col-sm-12 ">
+                    <div class="text-white bg-dark cuerpo__banner">
+                        <h3>Capacitaciones</h3>
+                        <p>Si tenes problemas con tu auto, si es tu primer auto y no tenes idea de que hacer antes de
+                            arrancarlo
+                            o como cambiar la rueda si pinchastes, este curso prático es para vos, en nuestro curso vasa
+                            poder
+                            saber que hacer cuando lo necesites, para mas informacion hace click <a
+                                href="https://www.w3schools.com">aca!</a></p>
                     </div>
-                    <div class="form-floating mb-3">
-                        <label for="floatingfechaNac"></label>
-                        <input type="date" id="floatinginputfechaNac" class="form-control text-center"></input>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInputmail" placeholder="name@example.com">
-                        <label for="floatingInputmail" class=" text-center">Email</label>
-                    </div>
-                    <div>
-                        <label for="asuntosmail">Asunto</label>
-                        <select id="asuntosmail" class="form-control">
-                            <option value="turnos">Turnos</option>
-                            <option value="Contactanos">Contactanos</option>
-                            <option value="otro">otro</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="">mujer</label>
-                        <input type="radio" name="selecciongenero" value="mujer">
-                        <label for="">hombre</label>
-                        <input type="radio" name="selecciongenero" value="hombre">
-                        <label for="">otros</label>
-                        <input type="radio" name="selecciongenero" value="otro">
-                        <label for="mensaje">Dejenos su mensaje</label>
-                        <textarea name="" id="mensaje" cols="auto" rows="auto" class="form-control"></textarea>
-                        <label for="">¿Desea recibir noticias?</label>
-                        <input type="checkbox">
-                        <button class="w-100 btn btn-lg m-2 tarjeta__boton" type="submit">Enviar</button>
-                        <button class="w-100 btn btn-lg m-2 tarjeta__boton bg-danger" type="reset" value="vaciar formulario">vaciar formulario</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-10 mx-auto col-lg-5">
-                <h2>Registrate!</h2>
-                <form class="p-4 p-md-5 mensaje">
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">contraseña</label>
-                    </div>
-                    <div class="checkbox mb-3">
-                        <label>
-                            <input type="checkbox" value="remember-me"> Recuerdame
-                        </label>
-                    </div>
-                    <button class="w-100 btn btn-lg bg-info tarjeta__boton" type="submit">Ingresar</button>
-                    <hr class="my-4">
-                    <small>Al hacer clic en Registrarse, acepta los términos de uso.</small>
-                </form>
-            </div>
-            <div class="col-sm-12 ">
-                <div class="text-white bg-dark cuerpo__banner">
-                    <h3>Capacitaciones</h3>
-                    <p>Si tenes problemas con tu auto, si es tu primer auto y no tenes idea de que hacer antes de
-                        arrancarlo
-                        o como cambiar la rueda si pinchastes, este curso prático es para vos, en nuestro curso vasa
-                        poder
-                        saber que hacer cuando lo necesites, para mas informacion hace click <a
-                            href="https://www.w3schools.com">aca!</a></p>
                 </div>
             </div>
         </section>
@@ -160,6 +162,7 @@
                     </div>
                     <input type="submit" value="suscribir">
                 </form>
+                <p>&copy; Jonathan Javier Urquiza</p>
             </div>
         </div>
     </footer>
