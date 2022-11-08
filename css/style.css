@@ -12,22 +12,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 2.7em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-p {
-  font-size: 1.25em;
-}
-
 ul {
   list-style: none;
 }
@@ -67,17 +51,6 @@ main {
   color: blue;
 }
 
-.contenedor1 {
-  height: 30%;
-}
-.contenedor1__marca {
-  height: 100%;
-}
-.contenedor1__pub {
-  height: 60px;
-  width: 50px;
-}
-
 nav {
   background-color: orangered;
   margin-bottom: 5px;
@@ -100,6 +73,10 @@ nav {
     font-size: 1.5rem;
   }
 }
+.tarjeta__promo:hover {
+  background-color: black;
+}
+
 .motor {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/carrusel/motor.jpg);
   background-repeat: no-repeat;
