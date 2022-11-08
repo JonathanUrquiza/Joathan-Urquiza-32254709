@@ -2,14 +2,20 @@
 
 @import "components/_btn.scss";
 
-@import "utils/variables";
+@import "utils/_variables";
 
-@import "utils/mixins";
+@import "utils/_mixins";
 
-@import "layout/header";
+@import "layout/_header";
 
-@import "layout/navbar";
+@import "layout/_navbar";
 
-@import "layout/main";
+@import "pages/_index";
 
-@import "layout/footer";
+@import "pages/_nosotros";
+
+@import "pages/comollegar";
+
+@import "layout/_main";
+
+@import "layout/_footer";

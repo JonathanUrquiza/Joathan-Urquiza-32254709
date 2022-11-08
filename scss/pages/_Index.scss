@@ -1,0 +1,26 @@
+.tarjeta {
+    &__promo {
+        border: 1px solid black;
+        border-radius: 25px;
+        width: 100%;
+        @include mobile {
+            font-size: 1.5rem;
+        }
+    }
+    &__promo:hover {
+        border: $border-gral;
+    }
+
+}
+#whatsapp {
+    @include monitor {
+        display: none;
+    }
+    @include mobile {
+        height: 50px;
+        position: fixed;
+        left: 20px;
+        bottom: 40px;
+        z-index: 1;
+    }
+}
