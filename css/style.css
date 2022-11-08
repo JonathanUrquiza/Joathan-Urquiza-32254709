@@ -50,14 +50,17 @@ main {
 }
 
 .tarjeta__boton {
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color: whitesmoke;
+  background-color: rgba(137, 43, 226, 0.911);
+  color: aliceblue;
   border-radius: 15px;
   padding: 10px 20px;
   display: flex;
   justify-content: center;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(255, 252, 252, 0.5);
+}
+.tarjeta__boton:hover {
+  background-color: blueviolet;
+  color: white;
 }
 .tarjeta__boton:active {
   border: 3px solid black;
@@ -86,6 +89,7 @@ nav {
 }
 
 .tarjeta__promo {
+  color: azure;
   border: 1px solid black;
   border-radius: 25px;
   width: 100%;
@@ -96,8 +100,32 @@ nav {
     font-size: 1.5rem;
   }
 }
-.tarjeta__promo:hover {
-  border: 3px solid rgb(0, 0, 0);
+.motor {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/carrusel/motor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cubierta {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/carrusel/neumaticos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.diagnostico {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/carrusel/diagnostico.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.vtv {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/carrusel/VTV.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 @media (min-width: 900px) {

@@ -5,6 +5,7 @@
 
 .tarjeta {
     &__promo {
+        color: azure;
         border: 1px solid black;
         border-radius: 25px;
         width: 100%;
@@ -14,9 +15,53 @@
         }
     }
     &__promo:hover {
-        border: $border-gral;
+        
     }
 
+}
+.motor {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5),
+    )
+    ,url(../../img/carrusel/motor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cubierta {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5),
+    )
+    ,url(../../img/carrusel/neumaticos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+}
+.diagnostico {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5),
+    )
+    ,url(../../img/carrusel/diagnostico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.vtv {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5),
+    )
+    ,url(../../img/carrusel/VTV.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 #whatsapp {
     @include monitor {
