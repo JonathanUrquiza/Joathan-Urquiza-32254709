@@ -78,7 +78,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), background-image url(../../img/carrusel/motor.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/carrusel/motor.jpg);
 }
 
 .cubierta {
@@ -149,9 +149,6 @@ section {
   background-color: rgba(255, 255, 255, 0.699);
 }
 
-.cuerpo {
-  background-color: rgba(255, 255, 255, 0.699);
-}
 .cuerpo__presentación {
   margin: 2px;
   padding: 2px;
